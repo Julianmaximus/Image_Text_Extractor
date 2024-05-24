@@ -1,0 +1,91 @@
+/* styles.scss */
+
+/* Base styles for form elements */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.actions {
+  text-align: center;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Error message styles */
+#error_explanation {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#error_explanation ul {
+  list-style: none;
+  padding: 0;
+}
+
+#error_explanation li {
+  margin-bottom: 5px;
+}
+
+
+/* scss for show.html.erb */
+
+.image-details {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.image-detail {
+  margin-bottom: 15px;
+}
+
+.image-detail strong {
+  font-weight: bold;
+}
+
+.image-actions {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #007bff;
+}
+
+.btn-back {
+  background-color: #6c757d;
+}

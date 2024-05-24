@@ -29,6 +29,9 @@ gem "jbuilder"
 gem "google-cloud-vision"
 gem "mini_magick"
 
+gem "sassc-rails", '~> 2.1'
+
+
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"

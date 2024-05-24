@@ -1,17 +1,21 @@
-<p>
-  <strong>Title:</strong>
-  <%= @image.title %>
-</p>
+<div class="image-details">
+  <div class="image-detail">
+    <strong>Title:</strong>
+    <p><%= @image.title %></p>
+  </div>
 
-<p>
-  <strong>Text:</strong>
-  <%= @image.text.html_safe %>
-</p>
+  <div class="image-detail">
+    <strong>Text:</strong>
+    <p><%= @image.text.html_safe %></p>
+  </div>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag url_for(@image.image) if @image.image.attached? %>
-</p>
+  <div class="image-detail">
+    <strong>Image:</strong>
+    <p><%= image_tag url_for(@image.image) if @image.image.attached? %></p>
+  </div>
 
-<%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+  <div class="image-actions">
+    <%= link_to 'Edit', edit_image_path(@image), class: "btn btn-edit" %>
+    <%= link_to 'Back', images_path, class: "btn btn-back" %>
+  </div>
+</div>
