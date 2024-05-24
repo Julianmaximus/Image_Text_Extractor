@@ -1,0 +1,17 @@
+<p>
+  <strong>Title:</strong>
+  <%= @image.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @image.text.html_safe %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag url_for(@image.image) if @image.image.attached? %>
+</p>
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>
